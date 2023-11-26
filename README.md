@@ -13,10 +13,15 @@ chmod +x init.sh
 
 ## ROS1 to ROS2 Bag Conversion
 
-Using `convert_2ros2.py`.
+Using `convert_2ros2.py`. In a new terminal, run
+
+```
+convertros2 [-i INPUT] [-d [DEST]]
+```
+Usage
 
 ```bash
-usage: convertros2 [-h] [-i INPUT] [-d [DEST]]
+convertros2 [-h] [-i INPUT] [-d [DEST]]
 
 A utility to convert ROS1 bag(s) to ROS2 bag(s)
 
@@ -25,5 +30,5 @@ optional arguments:
   -i INPUT, --input INPUT
                         Input folder/bag
   -d [DEST], --dest [DEST]
-                        Output folder destination. Default where your input folder is.
+                        Output folder destination. Default where your input folder is. Optional argument, default is input folder file.
 ```
